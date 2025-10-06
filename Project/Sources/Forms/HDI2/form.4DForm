@@ -1,0 +1,274 @@
+{
+	"destination": "detailScreen",
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"width": 920,
+	"height": 780,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Tab Control": {
+					"type": "tab",
+					"top": 20,
+					"left": 20,
+					"width": 880,
+					"height": 740,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "Tab Control",
+					"dataSourceTypeHint": "arrayText",
+					"labels": [
+						"TRANSFORM PICTURE",
+						"Demo"
+					],
+					"class": "default",
+					"action": "gotoPage",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text1": {
+					"type": "text",
+					"top": 80,
+					"left": 40,
+					"width": 840,
+					"height": 28,
+					"class": "HDI",
+					"text": "A new parameter is available for TRANSFORM PICTURE command : \"Transparency\""
+				},
+				"Rectangle": {
+					"type": "rectangle",
+					"top": 120,
+					"left": 560,
+					"width": 320,
+					"height": 620,
+					"fill": "#777777",
+					"stroke": "transparent"
+				},
+				"Pict1": {
+					"type": "input",
+					"top": 140,
+					"left": 580,
+					"width": 280,
+					"height": 180,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "vPict1",
+					"dataSourceTypeHint": "picture",
+					"borderStyle": "none",
+					"pictureFormat": "proportionalCenter",
+					"dragging": "custom"
+				},
+				"Pict2": {
+					"type": "input",
+					"top": 340,
+					"left": 580,
+					"width": 280,
+					"height": 180,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "vPict2",
+					"dataSourceTypeHint": "picture",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"pictureFormat": "proportionalCenter",
+					"dragging": "custom"
+				},
+				"Pict3": {
+					"type": "input",
+					"top": 540,
+					"left": 580,
+					"width": 280,
+					"height": 180,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "vPict3",
+					"dataSourceTypeHint": "picture",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"pictureFormat": "proportionalCenter",
+					"dragging": "custom",
+					"events": [
+						"onLoad"
+					]
+				},
+				"Text": {
+					"type": "text",
+					"top": 343,
+					"left": 170,
+					"width": 380,
+					"height": 40,
+					"text": "With \"Transparent\" property only"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 543,
+					"left": 170,
+					"width": 380,
+					"height": 40,
+					"text": "With \"Transparent\" property and with the application of the parameter \"transparent\" to the white color"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 627,
+					"left": 170,
+					"width": 380,
+					"height": 40,
+					"fontWeight": "bold",
+					"text": "TRANSFORM PICTURE(vPict3;Transparency;0x00FFFFFF)"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 140,
+					"left": 70,
+					"width": 100,
+					"height": 20,
+					"fontFamily": "Lucida Grande",
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"text": "My picture"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 340,
+					"left": 70,
+					"width": 100,
+					"height": 20,
+					"fontFamily": "Lucida Grande",
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"text": "My picture"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 540,
+					"left": 70,
+					"width": 100,
+					"height": 20,
+					"fontFamily": "Lucida Grande",
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"text": "My picture"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Pict5": {
+					"type": "input",
+					"top": 80,
+					"left": 40,
+					"width": 320,
+					"height": 320,
+					"dataSource": "vPict5",
+					"dataSourceTypeHint": "picture",
+					"pictureFormat": "proportionalCenter",
+					"dragging": "custom",
+					"dropping": "none"
+				},
+				"Pict4": {
+					"type": "input",
+					"top": 80,
+					"left": 390,
+					"width": 490,
+					"height": 620,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "vPict4",
+					"dataSourceTypeHint": "picture",
+					"pictureFormat": "scaled",
+					"dragging": "none",
+					"dropping": "custom"
+				},
+				"Button1": {
+					"type": "button",
+					"top": 510,
+					"left": 90,
+					"width": 220,
+					"height": 20,
+					"dataSource": "Button",
+					"text": "standard surimposition",
+					"method": "ObjectMethods/Button1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button": {
+					"type": "button",
+					"top": 550,
+					"left": 90,
+					"width": 220,
+					"height": 20,
+					"dataSource": "Button",
+					"text": "white color in transparency",
+					"method": "ObjectMethods/Button.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button3": {
+					"type": "button",
+					"top": 590,
+					"left": 90,
+					"width": 220,
+					"height": 20,
+					"dataSource": "Button",
+					"text": "blue color in tranparency",
+					"method": "ObjectMethods/Button3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button5": {
+					"type": "button",
+					"top": 720,
+					"left": 760,
+					"width": 120,
+					"height": 20,
+					"dataSource": "Button",
+					"text": "reset",
+					"method": "ObjectMethods/Button5.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	},
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	}
+}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
+<base name="HDI_PictureTransparency" uuid="89D3E6F80FA9EA408A0E251A8569EC50" collation_locale="fr">
+	<schema name="DEFAULT_SCHEMA"/>
+	<base_extra data_file_path=":PictureTransparency.4DD" package_name="HDI_PictureTransparency" structure_file_name="PictureTransparency">
+		<journal_file journal_file_enabled="false"/>
+	</base_extra>
+</base>
